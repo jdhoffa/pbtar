@@ -1,0 +1,73 @@
+# Rust - Backend
+/api/target/
+/api/debug/
+/api/Cargo.lock
+**/*.rs.bk
+/api/.env
+/api/.env.local
+/api/.env.development
+/api/.env.test
+/api/.env.production
+/api/sqlx-data.json
+
+# Svelte - Frontend
+/frontend/node_modules/
+/frontend/.svelte-kit/
+/frontend/build/
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development
+/frontend/.env.test
+/frontend/.env.production
+/frontend/package-lock.json
+/frontend/yarn.lock
+/frontend/pnpm-lock.yaml
+
+# Database
+/database/data/
+/database/.env
+*.dump
+*.sql.gz
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Temporary files
+tmp/
+temp/
+.temp/
