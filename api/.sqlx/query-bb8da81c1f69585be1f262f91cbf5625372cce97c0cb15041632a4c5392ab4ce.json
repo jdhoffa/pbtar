@@ -1,0 +1,76 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT \n            s.id, s.title, s.type as \"type_name\", s.temperature_target, \n            s.description, s.published_date, s.target_year,\n            p.id as \"publisher_id\", p.name as \"publisher_name\", p.description as \"publisher_description\"\n        FROM pbtar.scenarios s\n        LEFT JOIN pbtar.publishers p ON s.publisher_id = p.id\n        WHERE s.id = $1\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 1,
+        "name": "title",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 2,
+        "name": "type_name",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 3,
+        "name": "temperature_target",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 4,
+        "name": "description",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 5,
+        "name": "published_date",
+        "type_info": "Date"
+      },
+      {
+        "ordinal": 6,
+        "name": "target_year",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 7,
+        "name": "publisher_id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 8,
+        "name": "publisher_name",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 9,
+        "name": "publisher_description",
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Int4"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  "hash": "bb8da81c1f69585be1f262f91cbf5625372cce97c0cb15041632a4c5392ab4ce"
+}

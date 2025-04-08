@@ -1,0 +1,20 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT DISTINCT temperature_target FROM pbtar.scenarios WHERE temperature_target IS NOT NULL ORDER BY temperature_target",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "temperature_target",
+        "type_info": "Varchar"
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      true
+    ]
+  },
+  "hash": "419eb24c38190e5db2018585164d00a97ec7a993e77f64574f826e94bdf49754"
+}

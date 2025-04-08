@@ -1,0 +1,28 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT s.id, s.name\n        FROM pbtar.sectors s\n        JOIN pbtar.scenario_sectors ss ON s.id = ss.sector_id\n        WHERE ss.scenario_id = $1\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 1,
+        "name": "name",
+        "type_info": "Varchar"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Int4"
+      ]
+    },
+    "nullable": [
+      false,
+      false
+    ]
+  },
+  "hash": "bdc85ccb94f125209d06027c3909157bf13acf9df73a6a1e2c2dd67eb2550f20"
+}
